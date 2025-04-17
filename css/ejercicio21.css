@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+input{
+    padding: 10px;
+}
+p{
+    width: 250px;
+}
+#textoMostrado {
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
