@@ -1,5 +1,3 @@
-// js/ejercicio8.js
-
 const calcularMayor = (numero1, numero2) => {
     if (numero1 > numero2) {
       alert(`${numero1} es mayor que ${numero2}`);
@@ -13,5 +11,4 @@ const calcularMayor = (numero1, numero2) => {
   // Prueba con diferentes argumentos
   calcularMayor(10, 5);
   calcularMayor(7, 20);
-  calcularMayor(15, 15);
-  
+  calcularMayor(15, 15);  
