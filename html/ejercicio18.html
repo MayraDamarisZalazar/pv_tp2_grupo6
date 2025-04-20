@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcular Promedio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #2ec4b6;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2ec4b6;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #27b1a4;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff9f1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calcular Promedio</h1>
+
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1">
+
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2">
+
+    <label for="num3">Número 3:</label>
+    <input type="number" id="num3">
+
+    <button id="btnCalcular">Calcular promedio</button>
+
+    <p id="resultado"></p>
+  </div>
+
+<script src="../JS/ejercicio18.js"></script>
+</body>
+</html>
