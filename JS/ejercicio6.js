@@ -1,5 +1,3 @@
-// js/ejercicio6.js
-
 const edades = [18, 21, 30, 25, 27, 40, 33, 19];
 
 const calcularPromedio = (array) => {
