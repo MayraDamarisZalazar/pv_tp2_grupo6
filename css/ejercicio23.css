@@ -1,0 +1,45 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Altura de la ventana completa */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 5px solid #090a0a;
+    font-size: 20px;
+    color: #545657;
+  }
+  
+  /* Caja que contiene el formulario y el resultado */
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
