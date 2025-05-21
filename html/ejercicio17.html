@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejercicio17</title>
+</head>
+
+<body>
+
+  <script>
+    const contarLetraA = (texto) => {
+      let contador = 0;
+
+      for (let i = 0; i < texto.length; i++) {
+        if (texto[i].toLowerCase() === "a") {
+          contador++;
+        }
+      }
+
+      return contador;
+    };
+
+
+    let frase = prompt("Ingresá una palabra o frase:");
+    let resultado = contarLetraA(frase);
+    alert("la letra 'a' aparece " + resultado + " veces en lo que escribiste.");
+  </script>
+
+  
+</body>
+    <h1>ejercicio17</h1>
+</html>
