@@ -1,19 +1,29 @@
-const calcularPromedio = (a, b, c) => {
-    return (a + b + c) / 3;
-  };
-  
-  document.getElementById("btnCalcular").addEventListener("click", () => {
-    const num1 = parseInt(document.getElementById("num1").value);
-    const num2 = parseInt(document.getElementById("num2").value);
-    const num3 = parseInt(document.getElementById("num3").value);
-  
-    const resultado = document.getElementById("resultado");
-  
-    if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-      resultado.textContent = "Por favor, ingresa los tres números.";
-      return;
+document.addEventListener('DOMContentLoaded', function () {
+  const boton = document.getElementById('miBoton');
+  const parrafo = document.getElementById('miParrafo');
+
+  const textoOriginal =
+    'En este ejercicio vemos cómo capturar eventos en una página web utilizando JavaScript.<br>' +
+    'Específicamente, veremos cómo detectar un clic en un botón<br>' +
+    'y cambiar dinámicamente el contenido de un párrafo<br>' +
+    'utilizando el DOM.';
+
+  const textoNuevo =
+    'Hiciste clic en el botón y se activó un evento.<br>' +
+    'El contenido de este párrafo fue modificado dinámicamente.<br>' +
+    'Esto se logra gracias al uso de JavaScript y el DOM.<br>' +
+    'Los eventos permiten que la página reaccione a las acciones del usuario.';
+
+  let cambiado = false;
+
+  boton.addEventListener('click', function () {
+    if (!cambiado) {
+      parrafo.innerHTML = textoNuevo;
+      boton.textContent = 'Volver al texto original';
+    } else {
+      parrafo.innerHTML = textoOriginal; // Usamos innerHTML aquí también
+      boton.textContent = 'Cambiar texto';
     }
-  
-    const promedio = calcularPromedio(num1, num2, num3);
-    resultado.textContent = `El promedio es: ${promedio.toFixed(2)}`;
+    cambiado = !cambiado;
   });
+});
