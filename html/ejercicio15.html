@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retornar Mes</title>
+</head>
+<body>
+    <script>
+        let meses = [
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+
+        const retornarMes = (numero) => {
+            return numero >= 1 && numero <= 12 ? meses[numero - 1] : `El número ${numero} no corresponde a un mes`;
+        }
+
+        alert(retornarMes(5)); // Muestra: Mayo
+        alert(retornarMes(15)); // Muestra: "El número 15 no corresponde a un mes"
+    </script>
+</body>
+</html>
+

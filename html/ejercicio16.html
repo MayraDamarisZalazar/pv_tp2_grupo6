@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sumar Rango</title>
+</head>
+<body>
+  <h1>Resultado de sumarRango</h1>
+  <p id="resultado1"></p>
+  <p id="resultado2"></p>
+
+  <script>
+    const sumarRango = (inicial, final) => {
+      let suma = 0;
+      for (let i = inicial; i <= final; i++) {
+        suma += i;
+      }
+      return suma;
+    };
+
+    document.getElementById("resultado1").textContent = "sumarRango(1, 5) = " + sumarRango(1, 5);
+    document.getElementById("resultado2").textContent = "sumarRango(3, 8) = " + sumarRango(3, 8);
+  </script>
+</body>
+</html>
